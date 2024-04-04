@@ -98,3 +98,14 @@ footer {
   justify-content: center;
   /* Asegura que los logos estén centrados y juntos */
 }
+
+
+figure, video {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+}
