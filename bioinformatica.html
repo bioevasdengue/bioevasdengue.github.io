@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bioinformática Aplicada - BioEvas Dengue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="dengue_virus.html">Virus del Dengue</a></li>
+            <li><a href="diagnosis.html">Diagnóstico</a></li>
+            <li><a href="vaccines.html">Vacunas</a></li>
+            <li><a href="prevention.html">Prevención</a></li>
+            <li><a class="active" href="bioinformatica.html">Bioinformática Aplicada</a></li>
+            <li><a href="bibliografia.html">Bibliografía</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="header-container">
+        <h1>Bioinformática Aplicada</h1>
+    </div>
+    <div class="content">
+        <h2>Configuración</h2>
+        <p>La configuración del flujo de trabajo se realiza completamente dentro de <code>defaults/config_dengue.yaml</code>. El proceso de análisis está contenido en <code>Snakefile</code> con reglas incluidas. Cada regla especifica las entradas y salidas de sus archivos y extrae sus parámetros de la configuración. Hay poca redirección y cada regla debería poder razonarse por sí sola.</p>
+        
+        <h2>Usando datos de GenBank</h2>
+        <p>Esta compilación comienza extrayendo archivos de metadatos y secuencias preprocesados de GenBank y otras fuentes relevantes:</p>
+        <ul>
+            <li><a href="https://data.nextstrain.org/files/dengue/sequences_all.fasta.zst">Secuencias completas del dengue</a></li>
+            <li><a href="https://data.nextstrain.org/files/dengue/metadata_all.tsv.zst">Metadatos completos del dengue</a></li>
+            <li><a href="https://data.nextstrain.org/files/dengue/sequences_denv1.fasta.zst">Secuencias DENV-1</a></li>
+            <li><a href="https://data.nextstrain.org/files/dengue/metadata_denv1.tsv.zst">Metadatos DENV-1</a></li>
+            <!-- Más enlaces omitidos para brevedad -->
+        </ul>
+        <p>Los conjuntos de datos anteriores han sido preprocesados y limpiados para facilitar el análisis bioinformático.</p>
+        
+        <h2>Recursos adicionales de NCBI</h2>
+        <p>Para complementar la investigación y el análisis, se recomienda consultar los siguientes recursos de NCBI, donde se pueden encontrar secuencias adicionales, información genómica y herramientas de análisis para el dengue:</p>
+        <ul>
+            <li><a href="https://www.ncbi.nlm.nih.gov/dataset/?term=dengue">NCBI Dataset para el dengue</a></li>
+            <li><a href="https://www.ncbi.nlm.nih.gov/genome/?term=dengue+virus">NCBI Genoma del virus del dengue</a></li>
+            <li><a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">Herramienta BLAST de NCBI</a> para comparación de secuencias</li>
+        </ul>
+    </div>
+    <footer>
+        <p><a href="https://exa.unne.edu.ar/">FaCENA - UNNE</a></p>
+        <p>Contacto: bioevasdengue@gmail.com</p>
+        <p>2 Enero 2024</p>
+    </footer>
+</body>
+</html>
